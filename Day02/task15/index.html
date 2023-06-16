@@ -4,7 +4,10 @@
   <title>Character Counter</title>
   <script>
     function countCharacters() {
-      // code here
+        var one = document.getElementById("myInput");
+        var two = document.getElementById("charCount");
+        let h = one.value.length;
+        two.firstChild.nodeValue = `Character count: ${h}`;
     }
   </script>
 </head>
