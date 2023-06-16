@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <script>
+    function validateForm() {
+        var get = document.getElementById("myInput");
+        if (get.value.length == 0) {
+            alert("invalid messsage");
+        }
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="return validateForm()">
+    <input type="text" id="myInput" placeholder="Enter a value" />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
